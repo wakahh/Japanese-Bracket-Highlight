@@ -6,9 +6,9 @@
     "icon": "images/icon.png",
     "displayName": "Japanese Bracket Highlight",
     "description": "Highlight Japanese bracket",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "engines": {
-        "vscode": "^1.62.0"
+        "vscode": "^1.56.2"
     },
     "categories": [
         "Programming Languages"
