@@ -1,0 +1,25 @@
+{
+    "name": "japanese-bracket-highlight",
+    "displayName": "Japanese Bracket Highlight",
+    "description": "",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.62.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "plaintext",
+            "aliases": ["plaintext", "plaintext"],
+            "extensions": [".txt"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "plaintext",
+            "scopeName": "source.txt",
+            "path": "./syntaxes/plaintext.tmLanguage.json"
+        }]
+    }
+}
