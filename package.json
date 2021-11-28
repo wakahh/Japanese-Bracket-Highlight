@@ -1,7 +1,7 @@
 {
     "name": "japanese-bracket-highlight",
     "displayName": "Japanese Bracket Highlight",
-    "description": "Highlight Japanese bracket and punctuation",
+    "description": "Highlight Japanese bracket",
     "version": "0.0.1",
     "engines": {
         "vscode": "^1.62.0"
