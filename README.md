@@ -1,5 +1,10 @@
 # Japanese Bracket Highlight
 
+![badge-issues](https://img.shields.io/github/issues/wakahh/Japanese-Bracket-Highlight)
+![badge-last-commit](https://img.shields.io/github/last-commit/wakahh/Japanese-Bracket-Highlight)
+![badge-license](https://img.shields.io/github/license/wakahh/Japanese-Bracket-Highlight)
+![badge-extension](https://img.shields.io/static/v1?label=extension&message=vscode&color=blue)
+
 This extension highlights Japanese brackets (e.g. corner bracket `｢」`and parenthesis `（）`).
 And also supports regular parenthesis and number.
 
