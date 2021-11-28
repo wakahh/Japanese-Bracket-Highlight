@@ -6,7 +6,7 @@
     "icon": "images/icon.png",
     "displayName": "Japanese Bracket Highlight",
     "description": "Highlight Japanese bracket",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "engines": {
         "vscode": "^1.62.0"
     },
