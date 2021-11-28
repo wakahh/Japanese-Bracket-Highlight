@@ -3,29 +3,50 @@
 	"name": "plaintext",
 	"patterns": [
 		{
-			"include": "#keywords"
+			"include": "#full-bracket"
 		},
 		{
-			"include": "#strings"
+			"include": "#half-bracket"
+		},
+		{
+			"include": "#line-comment"
+		},
+		{
+			"include": "#number"
+		},
+		{
+			"include": "#punctuation"
 		}
 	],
 	"repository": {
-		"keywords": {
+		"full-bracket": {
 			"patterns": [{
-				"name": "keyword.control.plaintext",
-				"match": "\\b(if|while|for|return)\\b"
+				"name": "support.type",
+				"match": "[\uff08\uff09\uff62\uff63\uff3b\uff3d\uff5b\uff5d\uff1c\uff1e]"
 			}]
 		},
-		"strings": {
-			"name": "string.quoted.double.plaintext",
-			"begin": "\"",
-			"end": "\"",
-			"patterns": [
-				{
-					"name": "constant.character.escape.plaintext",
-					"match": "\\\\."
-				}
-			]
+		"half-bracket": {
+			"patterns": [{
+				"name": "support.type",
+				"match": "[\u0028\u0029\u007b\u007d\u003c\u003e\u300c-\u300f\u3010\u3011]"
+			}]
+		},
+		"line-comment": {
+			"name": "comment.line",
+			"begin": "//",
+			"end": "$"
+		},
+		"number": {
+			"patterns": [{
+				"name": "constant.numeric",
+  			"match": "-?[0-9]+"
+			}]
+		},
+		"punctuation": {
+			"patterns": [{
+				"name": "string",
+				"match": "[\u002c\u002e\u3001\u3002\uff0c\uff0e]"
+			}]
 		}
 	},
 	"scopeName": "source.txt"
